@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030A246D1FE8144F00C95550 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030A246C1FE8144F00C95550 /* GoogleService-Info.plist */; };
 		03D8DCBE1FE7FA6F00E297BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */; };
 		03D8DCC01FE7FA6F00E297BC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */; };
 		03D8DCC31FE7FA6F00E297BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D8DCC11FE7FA6F00E297BC /* Main.storyboard */; };
@@ -14,9 +15,11 @@
 		03D8DCC81FE7FA6F00E297BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D8DCC61FE7FA6F00E297BC /* LaunchScreen.storyboard */; };
 		03D8DCD41FE8063600E297BC /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCD11FE8063600E297BC /* AAPLPreviewView.m */; };
 		03D8DCD51FE8063600E297BC /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCD21FE8063600E297BC /* AAPLCameraViewController.m */; };
+		F6F5181356F9FD884F960F32 /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5A5696EAEB094EC994FF8E /* Pods_DevChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030A246C1FE8144F00C95550 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03D8DCBA1FE7FA6E00E297BC /* DevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		03D8DCD21FE8063600E297BC /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
 		03D8DCD31FE8063600E297BC /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
 		03D8DCD81FE806B100E297BC /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
+		1A5A5696EAEB094EC994FF8E /* Pods_DevChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F1073F516E2AFE523A1FFB /* Pods-DevChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat/Pods-DevChat.release.xcconfig"; sourceTree = "<group>"; };
+		EC618E39966DB5A0DE6C8149 /* Pods-DevChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat/Pods-DevChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F5181356F9FD884F960F32 /* Pods_DevChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,8 @@
 			children = (
 				03D8DCBC1FE7FA6E00E297BC /* DevChat */,
 				03D8DCBB1FE7FA6E00E297BC /* Products */,
+				78F6E136BA19207E6DD086CD /* Pods */,
+				CBD480C02594F81BD4BE724A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +88,7 @@
 				03D8DCC61FE7FA6F00E297BC /* LaunchScreen.storyboard */,
 				03D8DCC91FE7FA7000E297BC /* Info.plist */,
 				03D8DCCF1FE8063500E297BC /* DevChat-Bridging-Header.h */,
+				030A246C1FE8144F00C95550 /* GoogleService-Info.plist */,
 			);
 			path = DevChat;
 			sourceTree = "<group>";
@@ -102,6 +112,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		78F6E136BA19207E6DD086CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC618E39966DB5A0DE6C8149 /* Pods-DevChat.debug.xcconfig */,
+				41F1073F516E2AFE523A1FFB /* Pods-DevChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBD480C02594F81BD4BE724A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A5696EAEB094EC994FF8E /* Pods_DevChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03D8DCCC1FE7FA7000E297BC /* Build configuration list for PBXNativeTarget "DevChat" */;
 			buildPhases = (
+				04AF884086FBD50F7641F618 /* [CP] Check Pods Manifest.lock */,
 				03D8DCB61FE7FA6E00E297BC /* Sources */,
 				03D8DCB71FE7FA6E00E297BC /* Frameworks */,
 				03D8DCB81FE7FA6E00E297BC /* Resources */,
+				10008DD3051A4994324FB7D4 /* [CP] Embed Pods Frameworks */,
+				A4C8896C7B73F58F78F251BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,12 +193,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D8DCC81FE7FA6F00E297BC /* LaunchScreen.storyboard in Resources */,
+				030A246D1FE8144F00C95550 /* GoogleService-Info.plist in Resources */,
 				03D8DCC51FE7FA6F00E297BC /* Assets.xcassets in Resources */,
 				03D8DCC31FE7FA6F00E297BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04AF884086FBD50F7641F618 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DevChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10008DD3051A4994324FB7D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DevChat/Pods-DevChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DevChat/Pods-DevChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C8896C7B73F58F78F251BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DevChat/Pods-DevChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03D8DCB61FE7FA6E00E297BC /* Sources */ = {
@@ -313,6 +402,7 @@
 		};
 		03D8DCCD1FE7FA7000E297BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC618E39966DB5A0DE6C8149 /* Pods-DevChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -331,6 +421,7 @@
 		};
 		03D8DCCE1FE7FA7000E297BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F1073F516E2AFE523A1FFB /* Pods-DevChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
