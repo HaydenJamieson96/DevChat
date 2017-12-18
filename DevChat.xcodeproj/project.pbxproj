@@ -10,6 +10,8 @@
 		030A246D1FE8144F00C95550 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030A246C1FE8144F00C95550 /* GoogleService-Info.plist */; };
 		030A246F1FE821DB00C95550 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A246E1FE821DB00C95550 /* RoundTextField.swift */; };
 		030A24711FE825A900C95550 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24701FE825A900C95550 /* RoundedButton.swift */; };
+		030A24731FE8286900C95550 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24721FE8286900C95550 /* LoginVC.swift */; };
+		030A24771FE82AB200C95550 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24761FE82AB200C95550 /* AuthService.swift */; };
 		03D8DCBE1FE7FA6F00E297BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */; };
 		03D8DCC01FE7FA6F00E297BC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */; };
 		03D8DCC31FE7FA6F00E297BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D8DCC11FE7FA6F00E297BC /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		030A246C1FE8144F00C95550 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		030A246E1FE821DB00C95550 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		030A24701FE825A900C95550 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		030A24721FE8286900C95550 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		030A24761FE82AB200C95550 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		03D8DCBA1FE7FA6E00E297BC /* DevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -54,6 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030A24741FE82A8E00C95550 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		030A24751FE82AA000C95550 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				030A24761FE82AB200C95550 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0348836E1FE80E420072A104 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +102,11 @@
 		03D8DCBC1FE7FA6E00E297BC /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
-				0348836E1FE80E420072A104 /* Protocols */,
-				03D8DCD71FE8064300E297BC /* Controller */,
+				030A24751FE82AA000C95550 /* Services */,
+				030A24741FE82A8E00C95550 /* Model */,
 				03D8DCD61FE8063F00E297BC /* View */,
+				03D8DCD71FE8064300E297BC /* Controller */,
+				0348836E1FE80E420072A104 /* Protocols */,
 				03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */,
 				03D8DCC11FE7FA6F00E297BC /* Main.storyboard */,
 				03D8DCC41FE7FA6F00E297BC /* Assets.xcassets */,
@@ -114,6 +135,7 @@
 				03D8DCD31FE8063600E297BC /* AAPLCameraViewController.h */,
 				03D8DCD21FE8063600E297BC /* AAPLCameraViewController.m */,
 				03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */,
+				030A24721FE8286900C95550 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,10 +294,12 @@
 			files = (
 				03D8DCC01FE7FA6F00E297BC /* CameraVC.swift in Sources */,
 				030A24711FE825A900C95550 /* RoundedButton.swift in Sources */,
+				030A24731FE8286900C95550 /* LoginVC.swift in Sources */,
 				03D8DCBE1FE7FA6F00E297BC /* AppDelegate.swift in Sources */,
 				030A246F1FE821DB00C95550 /* RoundTextField.swift in Sources */,
 				03D8DCD41FE8063600E297BC /* AAPLPreviewView.m in Sources */,
 				03D8DCD51FE8063600E297BC /* AAPLCameraViewController.m in Sources */,
+				030A24771FE82AB200C95550 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

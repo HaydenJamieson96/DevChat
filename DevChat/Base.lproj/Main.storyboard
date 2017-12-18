@@ -68,16 +68,17 @@
                         <outlet property="cameraBtn" destination="Mcm-kp-cdM" id="OXW-XB-2he"/>
                         <outlet property="previewView" destination="w5M-0b-L9Z" id="FaY-Kg-JJx"/>
                         <outlet property="recordBtn" destination="o91-j5-NVW" id="BVK-Ld-Hgf"/>
+                        <segue destination="c9L-lk-fSY" kind="presentation" identifier="LoginVC" id="wvd-ir-2Dm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="5hP-GA-Kck">
             <objects>
-                <viewController id="c9L-lk-fSY" sceneMemberID="viewController">
+                <viewController id="c9L-lk-fSY" customClass="LoginVC" customModule="DevChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x7C-z5-Ykh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +181,9 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logInPressed:" destination="c9L-lk-fSY" eventType="touchUpInside" id="O01-CB-Ojh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,6 +207,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7kc-Rz-N98"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="aDC-WM-s8b" id="TPz-ML-0Kn"/>
+                        <outlet property="passwordField" destination="05K-7w-Kos" id="zmu-dM-pHb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAy-yW-1dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
