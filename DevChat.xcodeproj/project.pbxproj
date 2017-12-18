@@ -43,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0348836E1FE80E420072A104 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				03D8DCD81FE806B100E297BC /* AAPLCameraVCDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		03D8DCB11FE7FA6E00E297BC = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +70,10 @@
 		03D8DCBC1FE7FA6E00E297BC /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
+				0348836E1FE80E420072A104 /* Protocols */,
 				03D8DCD71FE8064300E297BC /* Controller */,
 				03D8DCD61FE8063F00E297BC /* View */,
 				03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */,
-				03D8DCD81FE806B100E297BC /* AAPLCameraVCDelegate.h */,
 				03D8DCC11FE7FA6F00E297BC /* Main.storyboard */,
 				03D8DCC41FE7FA6F00E297BC /* Assets.xcassets */,
 				03D8DCC61FE7FA6F00E297BC /* LaunchScreen.storyboard */,

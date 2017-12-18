@@ -22,7 +22,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 	AVCamSetupResultSessionConfigurationFailed
 };
 
-@interface AAPLCameraViewController () <AVCaptureFileOutputRecordingDelegate>
+@interface AAPLCameraViewController () <AVCaptureFileOutputRecordingDelegate, AAPLCameraVCDelegate>
 
 // For use in the storyboards.
 @property (nonatomic, weak) IBOutlet UILabel *cameraUnavailableLabel;
