@@ -21,20 +21,47 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o91-j5-NVW">
+                                <rect key="frame" x="156" y="601" width="63" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="Kh6-iY-gGG"/>
+                                    <constraint firstAttribute="height" constant="58" id="QQV-UI-k23"/>
+                                </constraints>
+                                <state key="normal" image="createsnap_btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcm-kp-cdM">
+                                <rect key="frame" x="314" y="28" width="69" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2Zx-b3-r1D"/>
+                                    <constraint firstAttribute="width" constant="69" id="RRt-2e-n7f"/>
+                                </constraints>
+                                <state key="normal" image="camera_icon_snap"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="o91-j5-NVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dU-Gw-wLa"/>
                             <constraint firstItem="w5M-0b-L9Z" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5at-Bp-BeQ"/>
+                            <constraint firstItem="Mcm-kp-cdM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="8n2-xa-w71"/>
                             <constraint firstItem="w5M-0b-L9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DC0-sF-eS2"/>
                             <constraint firstItem="w5M-0b-L9Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HS8-2t-vEV"/>
                             <constraint firstItem="w5M-0b-L9Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NzU-ZB-63C"/>
+                            <constraint firstItem="Mcm-kp-cdM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="8" id="l1C-uV-6YU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o91-j5-NVW" secondAttribute="bottom" constant="8" id="vl9-D8-Jct"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="w5M-0b-L9Z" id="FaY-Kg-JJx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera_icon_snap" width="29" height="24"/>
+        <image name="createsnap_btn" width="30" height="30"/>
+    </resources>
 </document>
