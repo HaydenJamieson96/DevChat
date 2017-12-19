@@ -13,6 +13,9 @@
 		030A24731FE8286900C95550 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24721FE8286900C95550 /* LoginVC.swift */; };
 		030A24771FE82AB200C95550 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24761FE82AB200C95550 /* AuthService.swift */; };
 		03A34C491FE9283C00130C48 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A34C481FE9283C00130C48 /* DataService.swift */; };
+		03A34C4B1FE92AD300130C48 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A34C4A1FE92AD300130C48 /* UsersVC.swift */; };
+		03A34C4D1FE92BAB00130C48 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A34C4C1FE92BAB00130C48 /* UserCell.swift */; };
+		03A34C4F1FE92DE200130C48 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A34C4E1FE92DE200130C48 /* User.swift */; };
 		03D8DCBE1FE7FA6F00E297BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */; };
 		03D8DCC01FE7FA6F00E297BC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */; };
 		03D8DCC31FE7FA6F00E297BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D8DCC11FE7FA6F00E297BC /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		030A24721FE8286900C95550 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		030A24761FE82AB200C95550 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		03A34C481FE9283C00130C48 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		03A34C4A1FE92AD300130C48 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		03A34C4C1FE92BAB00130C48 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		03A34C4E1FE92DE200130C48 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		03D8DCBA1FE7FA6E00E297BC /* DevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 		030A24741FE82A8E00C95550 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03A34C4E1FE92DE200130C48 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				03D8DCD11FE8063600E297BC /* AAPLPreviewView.m */,
 				030A246E1FE821DB00C95550 /* RoundTextField.swift */,
 				030A24701FE825A900C95550 /* RoundedButton.swift */,
+				03A34C4C1FE92BAB00130C48 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 				03D8DCD21FE8063600E297BC /* AAPLCameraViewController.m */,
 				03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */,
 				030A24721FE8286900C95550 /* LoginVC.swift */,
+				03A34C4A1FE92AD300130C48 /* UsersVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,9 +311,12 @@
 				030A24711FE825A900C95550 /* RoundedButton.swift in Sources */,
 				030A24731FE8286900C95550 /* LoginVC.swift in Sources */,
 				03D8DCBE1FE7FA6F00E297BC /* AppDelegate.swift in Sources */,
+				03A34C4B1FE92AD300130C48 /* UsersVC.swift in Sources */,
 				030A246F1FE821DB00C95550 /* RoundTextField.swift in Sources */,
 				03D8DCD41FE8063600E297BC /* AAPLPreviewView.m in Sources */,
+				03A34C4F1FE92DE200130C48 /* User.swift in Sources */,
 				03D8DCD51FE8063600E297BC /* AAPLCameraViewController.m in Sources */,
+				03A34C4D1FE92BAB00130C48 /* UserCell.swift in Sources */,
 				030A24771FE82AB200C95550 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

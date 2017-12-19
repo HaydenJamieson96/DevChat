@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+            <point key="canvasLocation" x="284" y="33"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="5hP-GA-Kck">
@@ -215,6 +216,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAy-yW-1dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="783.20000000000005" y="32.833583208395808"/>
+        </scene>
+        <!--UsersVC-->
+        <scene sceneID="27Z-Og-4bY">
+            <objects>
+                <viewController id="YjM-fb-eZn" customClass="UsersVC" customModule="DevChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvP-rK-hUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iF5-Oi-fMz">
+                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="Gre-jm-KvS" customClass="UserCell" customModule="DevChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gre-jm-KvS" id="a94-1C-W9P">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jonbon23kickdawg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09J-HC-TLM">
+                                                    <rect key="frame" x="28" y="6" width="230" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="230" id="ThN-wZ-kAy"/>
+                                                        <constraint firstAttribute="height" constant="32" id="wsl-KT-dDT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="09J-HC-TLM" firstAttribute="centerY" secondItem="a94-1C-W9P" secondAttribute="centerY" id="1Zb-W9-eML"/>
+                                                <constraint firstItem="09J-HC-TLM" firstAttribute="leading" secondItem="a94-1C-W9P" secondAttribute="leadingMargin" constant="20" id="Bj8-zw-yXc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstNameLbl" destination="09J-HC-TLM" id="VcU-la-7vE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="zLL-0r-MPK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <color key="barTintColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zLL-0r-MPK" firstAttribute="trailing" secondItem="vwn-3p-8ob" secondAttribute="trailing" id="29r-68-KYS"/>
+                            <constraint firstItem="iF5-Oi-fMz" firstAttribute="top" secondItem="zLL-0r-MPK" secondAttribute="bottom" id="7Cp-XQ-Vfp"/>
+                            <constraint firstItem="iF5-Oi-fMz" firstAttribute="bottom" secondItem="vwn-3p-8ob" secondAttribute="bottom" id="gJ9-wu-Vod"/>
+                            <constraint firstItem="zLL-0r-MPK" firstAttribute="top" secondItem="hvP-rK-hUS" secondAttribute="top" id="jEW-So-Qz2"/>
+                            <constraint firstItem="iF5-Oi-fMz" firstAttribute="trailing" secondItem="vwn-3p-8ob" secondAttribute="trailing" id="r2l-SP-ELV"/>
+                            <constraint firstItem="zLL-0r-MPK" firstAttribute="leading" secondItem="vwn-3p-8ob" secondAttribute="leading" id="yES-5F-e02"/>
+                            <constraint firstItem="iF5-Oi-fMz" firstAttribute="leading" secondItem="vwn-3p-8ob" secondAttribute="leading" id="yFG-1z-nq5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vwn-3p-8ob"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="iF5-Oi-fMz" id="fzC-yM-S0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpW-v6-53V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="33"/>
         </scene>
     </scenes>
     <resources>
