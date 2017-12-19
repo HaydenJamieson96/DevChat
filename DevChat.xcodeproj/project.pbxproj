@@ -12,6 +12,7 @@
 		030A24711FE825A900C95550 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24701FE825A900C95550 /* RoundedButton.swift */; };
 		030A24731FE8286900C95550 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24721FE8286900C95550 /* LoginVC.swift */; };
 		030A24771FE82AB200C95550 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A24761FE82AB200C95550 /* AuthService.swift */; };
+		03A34C491FE9283C00130C48 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A34C481FE9283C00130C48 /* DataService.swift */; };
 		03D8DCBE1FE7FA6F00E297BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */; };
 		03D8DCC01FE7FA6F00E297BC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */; };
 		03D8DCC31FE7FA6F00E297BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D8DCC11FE7FA6F00E297BC /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		030A24701FE825A900C95550 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		030A24721FE8286900C95550 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		030A24761FE82AB200C95550 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		03A34C481FE9283C00130C48 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		03D8DCBA1FE7FA6E00E297BC /* DevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D8DCBD1FE7FA6F00E297BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D8DCBF1FE7FA6F00E297BC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				030A24761FE82AB200C95550 /* AuthService.swift */,
+				03A34C481FE9283C00130C48 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A34C491FE9283C00130C48 /* DataService.swift in Sources */,
 				03D8DCC01FE7FA6F00E297BC /* CameraVC.swift in Sources */,
 				030A24711FE825A900C95550 /* RoundedButton.swift in Sources */,
 				030A24731FE8286900C95550 /* LoginVC.swift in Sources */,
