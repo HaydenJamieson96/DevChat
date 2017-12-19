@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 
 typealias Completion = (_ errMsg: String?, _ data: Any?) -> Void
 
